@@ -1209,3 +1209,488 @@ body {
   border-radius: 12px;
   font-size: 0.9em;
 }
+
+/* Slide15-19的共享样式 */
+.summary-grid, .prompt-engineering, .trends-container, .productivity-container, .barriers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.summary-card, .principles-section, .patterns-section, .trend-card, .strategy-card, 
+.barrier-card, .case-item, .expansion-strategy {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+h4 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+h5 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Slide15样式 */
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.method-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.method-icon {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.method-content h5 {
+  margin: 0 0 4px 0;
+}
+
+.method-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.integration-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.integration-table th, .integration-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+.integration-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Slide16样式 */
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.principle-card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.principle-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.principle-card p {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.pattern-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pattern-table th, .pattern-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+.pattern-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.example-preview {
+  background-color: #f8f8f8;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.example-preview pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 13px;
+  color: #333;
+}
+
+.prompt-tips {
+  background-color: #e6f7ff;
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #1890ff;
+}
+
+.prompt-tips p {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Slide17样式 */
+.trends-row {
+  display: flex;
+  gap: 20px;
+}
+
+.trend-card {
+  flex: 1;
+}
+
+.trend-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.trend-icon {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.trend-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.trend-list li {
+  margin-bottom: 10px;
+}
+
+.trend-list p {
+  margin: 3px 0 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.shift-timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 20px;
+}
+
+.shift-timeline:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  right: 50px;
+  height: 2px;
+  background-color: #ddd;
+  z-index: 0;
+}
+
+.timeline-point {
+  position: relative;
+  width: 22%;
+  text-align: center;
+  z-index: 1;
+}
+
+.point-time {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Slide17样式（续） */
+.timeline-point.present .point-time {
+  background-color: #1890ff;
+  color: white;
+}
+
+.timeline-point.future .point-time {
+  background-color: #91d5ff;
+  color: #333;
+}
+
+.timeline-point.far-future .point-time {
+  background-color: #e6f7ff;
+  color: #333;
+}
+
+.point-content {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.point-content p {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Slide18新增样式 */
+.prompt-sharing {
+  margin-top: 20px;
+}
+
+.sharing-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.sharing-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sharing-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.sharing-icon {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.sharing-item p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.feature-tag {
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #555;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.benefit-point {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #555;
+}
+
+.benefit-icon {
+  color: #52c41a;
+  font-weight: bold;
+}
+
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.model-card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.model-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.model-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.model-card h5 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.model-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.tips-section {
+  margin-top: 20px;
+}
+
+.tips-list {
+  margin: 10px 0 0 0;
+  padding-left: 25px;
+}
+
+.tips-list li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Slide19样式 */
+.barriers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.barrier-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.barrier-icon {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.barrier-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.transformation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.before {
+  color: #ff4d4f;
+}
+
+.arrow {
+  color: #888;
+}
+
+.after {
+  color: #52c41a;
+  font-weight: bold;
+}
+
+.strategies-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.expansion-strategy {
+  background-color: white;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.expansion-strategy h5 {
+  margin: 0 0 8px 0;
+  color: #1890ff;
+}
+
+.expansion-strategy p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.benefit {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #555;
+  padding: 5px 0 0 0;
+  border-top: 1px dashed #ddd;
+}
+
+.story-content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.story-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}

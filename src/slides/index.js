@@ -14,6 +14,12 @@ import Slide12 from './Slide12'; // 案例1演示
 import Slide13 from './Slide13'; // 案例2简介
 import Slide14 from './Slide14'; // 案例2演示
 
+import Slide15 from './Slide15';
+import Slide16 from './Slide16';
+import Slide17 from './Slide17';
+import Slide18 from './Slide18';
+import Slide19 from './Slide19';
+
 // 导出所有幻灯片的数组
 const allSlides = [
   Slide1,
@@ -30,6 +36,12 @@ const allSlides = [
   Slide12,
   Slide13,
   Slide14,
+
+  Slide15,
+  Slide16,
+  Slide17,
+  Slide18,
+  Slide19,
 ];
 
 export default allSlides;
