@@ -920,3 +920,212 @@ body {
     min-height: 400px;
   }
 }
+
+/* Slide10 的 CSS */
+.Slide10-content {
+  margin: 30px 0;
+  font-size: 1.1em;
+  color: #666;
+}
+
+.Slide10-content ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.Slide10-content li {
+  margin: 10px 0;
+}
+
+/* Slide11 和 Slide13 的 CSS */
+.Slide11-content-grid,
+.Slide13-content-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.Slide11-content-box,
+.Slide13-content-box {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Slide11-content-box h4,
+.Slide13-content-box h4 {
+  margin: 0 0 15px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.Slide11-content-box p,
+.Slide13-content-box p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #666;
+}
+
+.Slide11-content-box ul,
+.Slide13-content-box ul {
+  padding-left: 20px;
+  color: #666;
+}
+
+.Slide11-content-box li,
+.Slide13-content-box li {
+  margin: 10px 0;
+}
+
+/* Slide12 的 CSS */
+.Slide12-intro {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f0f8ff;
+  border-radius: 8px;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+}
+
+.Slide12-intro strong {
+  color: #007bff;
+}
+
+.Slide12-intro .highlight {
+  color: #ff4500;
+  font-weight: bold;
+}
+
+.Slide12-toggle-prompt {
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.Slide12-toggle-prompt:hover {
+  color: #0056b3;
+}
+
+.Slide12-prompt-box {
+  margin-top: 15px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.Slide12-prompt-box h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.Slide12-prompt-box h5 {
+  margin: 15px 0 5px 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.Slide12-prompt-box p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.Slide12-prompt-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.Slide12-prompt-box th,
+.Slide12-prompt-box td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.Slide12-prompt-box th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+.Slide12-prompt-box code {
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.Slide12-prompt-box ol,
+.Slide12-prompt-box ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.Slide12-content-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.Slide12-step-box {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Slide12-step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.Slide12-step-header h4 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.Slide12-step-content p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.Slide12-video-wrapper {
+  margin: 15px 0;
+}
+
+.Slide12-video-wrapper video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.Slide12-video-caption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #777;
+  text-align: center;
+}
+
+.feature-pill {
+  background: #007bff;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.9em;
+}
