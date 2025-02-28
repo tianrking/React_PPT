@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI辅助编程浪潮来袭</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            padding: 40px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .slide.active {
+            opacity: 1;
+            z-index: 1;
+        }
+        .slide-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            color: #1890ff;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        h3 {
+            font-size: 28px;
+            color: #555;
+            margin-bottom: 14px;
+        }
+        ul {
+            font-size: 24px;
+            line-height: 1.5;
+            color: #333;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            max-height: 70%;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .column {
+            width: 48%;
+        }
+        .notes {
+            font-size: 18px;
+            color: #666;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            left: 40px;
+            font-size: 14px;
+            color: #999;
+        }
+        .controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            display: flex;
+            gap: 10px;
+        }
+        .control-btn {
+            padding: 10px 15px;
+            background-color: #1890ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .control-btn:hover {
+            background-color: #40a9ff;
+        }
+        .control-btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .slide-counter {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            font-size: 16px;
+            color: #666;
+        }
+        .fullscreen-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+            background-color: transparent;
+            color: #1890ff;
+            border: 1px solid #1890ff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .fullscreen-btn:hover {
+            background-color: #e6f7ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <!-- 封面幻灯片 -->
+        <div class="slide active">
+            <div class="title-slide">
+                <h1>AI辅助编程浪潮来袭</h1>
+                <h2>引言：智能开发新纪元</h2>
+                <div class="footer">2025年</div>
+            </div>
+        </div>
+
+        <!-- 引言：AI辅助编程浪潮来袭 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>引言：智能开发新纪元</h2>
+                <h3>AI辅助编程浪潮来袭</h3>
+                <ul>
+                    <li>从根本改变开发流程</li>
+                    <li>降低技术门槛，扩大开发者基数</li>
+                    <li>大幅提升开发效率与代码质量</li>
+                </ul>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+
+        <!-- 传统开发 vs AI辅助开发流程对比 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>传统开发 vs AI辅助开发流程对比</h2>
+                <div class="image-container">
+                    <img src="ai-dev-flowchart.svg" alt="传统开发 vs AI辅助开发流程对比">
+                </div>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+
+        <!-- 实际开发案例：工作量对比 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>实际开发案例：工作量对比</h2>
+                <div class="image-container">
+                    <img src="ai-dev-cases.svg" alt="实际开发案例">
+                </div>
+                <div class="notes">
+                    <p><strong>说明要点：</strong> 工作量估计基于行业观察与项目实践；AI最显著的优势在于：知识获取、代码生成、配置自动化；关键项目节点仍需开发者把控</p>
+                </div>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+
+        <!-- 开发者角色转变 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>开发者角色转变</h2>
+                <div class="image-container">
+                    <img src="developer-roles.svg" alt="开发者角色转变">
+                </div>
+                <div class="notes">
+                    <p><strong>关键洞察：</strong> 从"编码者"到"引导者"；从低层次细节到高层次设计；更多时间用于创造性思考</p>
+                </div>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+
+        <!-- 为什么说这是一场浪潮而非简单工具改进？1 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>为什么说这是一场浪潮而非简单工具改进？</h2>
+                <h3>1. 全流程智能化转型</h3>
+                <ul>
+                    <li><strong>需求分析阶段：</strong> AI自动从非结构化需求文档中提取关键点</li>
+                    <li><strong>设计阶段：</strong> 基于需求自动生成架构建议</li>
+                    <li><strong>开发阶段：</strong> 实时代码补全、自动生成完整功能模块</li>
+                    <li><strong>测试阶段：</strong> 自动生成测试用例、预测潜在边缘情况</li>
+                    <li><strong>CI/CD阶段：</strong> 自适应流水线配置、智能问题检测</li>
+                    <li><strong>监控阶段：</strong> 性能趋势分析与预测、自动生成报告</li>
+                </ul>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+
+        <!-- 为什么说这是一场浪潮而非简单工具改进？2 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>为什么说这是一场浪潮而非简单工具改进？</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>2. 知识壁垒显著降低</h3>
+                        <ul>
+                            <li>新手程序员能够更快上手复杂项目</li>
+                            <li>跨领域开发变得更加容易</li>
+                            <li>领域专家可直接参与开发过程</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>3. 创新方式本质变革</h3>
+                        <ul>
+                            <li><strong>从手工制作到指导生成</strong></li>
+                            <li><strong>从线性开发到并行探索</strong></li>
+                            <li><strong>从经验主导到数据驱动</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+
+        <!-- 真实世界的应用场景 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>真实世界的应用场景</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>嵌入式开发</h3>
+                        <ul>
+                            <li>屏幕驱动移植：AI能理解复杂驱动API</li>
+                            <li>传感器接口：自动生成数据采集与处理代码</li>
+                        </ul>
+                        <h3>开源项目部署</h3>
+                        <ul>
+                            <li>自动解析依赖关系</li>
+                            <li>生成环境配置脚本</li>
+                            <li>智能处理安全配置调整</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>前端开发</h3>
+                        <ul>
+                            <li>从设计稿直接生成组件代码</li>
+                            <li>自动优化响应式布局</li>
+                            <li>智能处理浏览器兼容性</li>
+                        </ul>
+                        <h3>后端开发</h3>
+                        <ul>
+                            <li>API自动生成与文档化</li>
+                            <li>数据库查询优化</li>
+                            <li>安全检测与增强</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+
+        <!-- AI辅助开发的挑战与局限 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>AI辅助开发的挑战与局限</h2>
+                <ul>
+                    <li><strong>安全与质量把控</strong>：AI生成代码仍需人工审核，特别是安全敏感场景</li>
+                    <li><strong>系统理解深度</strong>：对特定领域复杂系统的理解仍有局限</li>
+                    <li><strong>技术栈适配</strong>：新兴或小众技术栈支持可能不完善</li>
+                    <li><strong>定制开发需求</strong>：高度定制化场景下仍需大量人工干预</li>
+                </ul>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+
+        <!-- 大模型最新进展 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>OPENAI, Claude, XAI... 大模型最新进展</h2>
+                <ul>
+                    <li><strong>代码理解能力</strong>：能分析复杂代码库结构和功能</li>
+                    <li><strong>多语言支持</strong>：支持几乎所有主流编程语言</li>
+                    <li><strong>系统设计能力</strong>：能提供架构级别建议</li>
+                    <li><strong>背景知识扩展</strong>：融合软件工程最佳实践</li>
+                </ul>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+
+        <!-- 议程概览 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>议程概览</h2>
+                <ul>
+                    <li><strong>I. 引言：智能开发新纪元</strong></li>
+                    <li><strong>II. 双剑合璧：Cursor 与 Trae 深度解析</strong></li>
+                    <li><strong>III. 实战演练：AI 赋能开发</strong></li>
+                    <li><strong>IV. 总结与展望：AI 开发的无限未来</strong></li>
+                </ul>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+
+        <!-- 其他热门开源智能体简介 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>其他热门开源智能体简介</h2>
+                <ul>
+                    <li><strong>GitHub Copilot</strong>：IDE集成的代码生成助手</li>
+                    <li><strong>AutoGPT</strong>：自主执行复杂任务的智能体</li>
+                    <li><strong>Devin</strong>：AI软件工程师，能独立完成项目</li>
+                    <li><strong>Cursor AI</strong>：增强型代码编辑器，具备强大的代码理解能力</li>
+                </ul>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+
+        <!-- 引言总结 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>引言总结</h2>
+                <ul>
+                    <li>AI辅助编程不仅是工具，而是开发模式的革命性转变</li>
+                    <li>开发者角色正在从编码实现者向创意引导者转变</li>
+                    <li>实际项目证明，AI辅助可显著提升开发效率</li>
+                    <li>Cursor与Trae代表了当前AI编程辅助工具的最新发展方向</li>
+                </ul>
+                <div class="footer">AI辅助编程浪潮来袭</div>
+            </div>
+        </div>
+    </div>
+
+    <button class="fullscreen-btn" id="fullscreen-btn">全屏演示</button>
+
+    <div class="controls">
+        <button class="control-btn" id="prev-btn">上一页</button>
+        <button class="control-btn" id="next-btn">下一页</button>
+    </div>
+
+    <div class="slide-counter" id="slide-counter">1 / 12</div>
+
+    <script>
+        // 幻灯片控制脚本
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const slideCounter = document.getElementById('slide-counter');
+            const fullscreenBtn = document.getElementById('fullscreen-btn');
+            let currentSlide = 0;
+            
+            // 更新按钮状态
+            function updateButtons() {
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === slides.length - 1;
+                slideCounter.textContent = `${currentSlide + 1} / ${slides.length}`;
+            }
+            
+            // 显示当前幻灯片
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        slide.classList.add('active');
+                    } else {
+                        slide.classList.remove('active');
+                    }
+                });
+                updateButtons();
+            }
+            
+            // 上一页
+            prevBtn.addEventListener('click', function() {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+            
+            // 下一页
+            nextBtn.addEventListener('click', function() {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+            
+            // 键盘控制
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+                    // 右箭头、空格或PageDown键
+                    if (currentSlide < slides.length - 1) {
+                        currentSlide++;
+                        showSlide(currentSlide);
+                    }
+                } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+                    // 左箭头或PageUp键
+                    if (currentSlide > 0) {
+                        currentSlide--;
+                        showSlide(currentSlide);
+                    }
+                } else if (e.key === 'Home') {
+                    // Home键
+                    currentSlide = 0;
+                    showSlide(currentSlide);
+                } else if (e.key === 'End') {
+                    // End键
+                    currentSlide = slides.length - 1;
+                    showSlide(currentSlide);
+                }
+            });
+            
+            // 全屏切换
+            fullscreenBtn.addEventListener('click', function() {
+                if (!document.fullscreenElement) {
+                    document.documentElement.requestFullscreen().catch(err => {
+                        console.error(`全屏请求出错: ${err.message}`);
+                    });
+                    fullscreenBtn.textContent = '退出全屏';
+                } else {
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                        fullscreenBtn.textContent = '全屏演示';
+                    }
+                }
+            });
+            
+            // 初始化显示
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>

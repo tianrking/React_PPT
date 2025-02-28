@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f9f9f9"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">传统开发 vs AI辅助开发流程对比</text>
+  
+  <!-- 传统开发流程 - 左侧 -->
+  <text x="200" y="80" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#555">传统开发流程</text>
+  
+  <!-- 传统开发流程框 -->
+  <rect x="50" y="100" width="300" height="480" rx="10" ry="10" fill="#f0f0f0" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- 传统开发步骤 -->
+  <!-- 需求分析 -->
+  <rect x="75" y="120" width="250" height="50" rx="5" ry="5" fill="#e6e6e6" stroke="#ccc" stroke-width="1"/>
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">需求分析</text>
+  <text x="200" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">开发者：深入理解领域知识和技术规范</text>
+  
+  <!-- 设计架构 -->
+  <rect x="75" y="180" width="250" height="50" rx="5" ry="5" fill="#e6e6e6" stroke="#ccc" stroke-width="1"/>
+  <text x="200" y="210" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">设计架构</text>
+  <text x="200" y="230" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">开发者：查阅大量文档和最佳实践</text>
+  
+  <!-- 编写代码 -->
+  <rect x="75" y="240" width="250" height="50" rx="5" ry="5" fill="#e6e6e6" stroke="#ccc" stroke-width="1"/>
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">编写代码</text>
+  <text x="200" y="290" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">开发者：逐行编写、调试复杂逻辑</text>
+  
+  <!-- 代码测试 -->
+  <rect x="75" y="300" width="250" height="50" rx="5" ry="5" fill="#e6e6e6" stroke="#ccc" stroke-width="1"/>
+  <text x="200" y="330" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">代码测试</text>
+  <text x="200" y="350" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">开发者：设计测试用例、边界条件分析</text>
+  
+  <!-- 人工检验 -->
+  <rect x="75" y="360" width="250" height="50" rx="5" ry="5" fill="#e6e6e6" stroke="#ccc" stroke-width="1"/>
+  <text x="200" y="390" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">人工检验与代码审查</text>
+  <text x="200" y="410" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">团队成员互相检查代码质量和安全性</text>
+  
+  <!-- 持续集成 -->
+  <rect x="75" y="420" width="250" height="50" rx="5" ry="5" fill="#e6e6e6" stroke="#ccc" stroke-width="1"/>
+  <text x="200" y="450" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">持续集成与部署</text>
+  <text x="200" y="470" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">开发者：建立和维护复杂的CI/CD管道</text>
+  
+  <!-- 维护和更新 -->
+  <rect x="75" y="480" width="250" height="50" rx="5" ry="5" fill="#e6e6e6" stroke="#ccc" stroke-width="1"/>
+  <text x="200" y="510" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">运维与后续迭代</text>
+  <text x="200" y="530" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">多阶段问题追踪、解决与功能迭代</text>
+  
+  <!-- 反馈闭环 -->
+  <path d="M100 510 C 60 510, 60 150, 75 150" fill="none" stroke="#888" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="70,155 75,145 80,155" fill="#888"/>
+  
+  <!-- AI辅助开发流程 - 右侧 -->
+  <text x="600" y="80" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#555">AI辅助开发流程</text>
+  
+  <!-- AI辅助开发流程框 -->
+  <rect x="450" y="100" width="300" height="480" rx="10" ry="10" fill="#e6f7ff" stroke="#91d5ff" stroke-width="2"/>
+  
+  <!-- AI辅助开发步骤 -->
+  <!-- 需求分析 -->
+  <rect x="475" y="120" width="250" height="50" rx="5" ry="5" fill="#bae7ff" stroke="#91d5ff" stroke-width="1"/>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">AI辅助需求分析</text>
+  <text x="600" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">开发者：提供高层目标，审核AI建议</text>
+  
+  <!-- 设计架构 -->
+  <rect x="475" y="180" width="250" height="50" rx="5" ry="5" fill="#bae7ff" stroke="#91d5ff" stroke-width="1"/>
+  <text x="600" y="210" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">AI推荐架构方案</text>
+  <text x="600" y="230" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">开发者：选择最佳方案，调整细节</text>
+  
+  <!-- 编写代码 -->
+  <rect x="475" y="240" width="250" height="50" rx="5" ry="5" fill="#bae7ff" stroke="#91d5ff" stroke-width="1"/>
+  <text x="600" y="270" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">AI代码生成与补全</text>
+  <text x="600" y="290" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">开发者：引导生成方向，审核与修改</text>
+  
+  <!-- 代码测试 -->
+  <rect x="475" y="300" width="250" height="50" rx="5" ry="5" fill="#bae7ff" stroke="#91d5ff" stroke-width="1"/>
+  <text x="600" y="330" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">AI辅助测试生成</text>
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">开发者：补充特定测试场景，验证结果</text>
+  
+  <!-- 人工检验与AI检测 -->
+  <rect x="475" y="360" width="250" height="50" rx="5" ry="5" fill="#bae7ff" stroke="#91d5ff" stroke-width="1"/>
+  <text x="600" y="390" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">混合代码审查</text>
+  <text x="600" y="410" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">AI初筛问题，人工决策关键点</text>
+  
+  <!-- 持续集成 -->
+  <rect x="475" y="420" width="250" height="50" rx="5" ry="5" fill="#bae7ff" stroke="#91d5ff" stroke-width="1"/>
+  <text x="600" y="450" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">智能化CI/CD</text>
+  <text x="600" y="470" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">开发者：审核自动配置，关注异常点</text>
+  
+  <!-- 维护和更新 -->
+  <rect x="475" y="480" width="250" height="50" rx="5" ry="5" fill="#bae7ff" stroke="#91d5ff" stroke-width="1"/>
+  <text x="600" y="510" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">智能运维与迭代</text>
+  <text x="600" y="530" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">AI辅助分析问题模式、预测维护需求</text>
+  
+  <!-- 反馈闭环 -->
+  <path d="M700 510 C 740 510, 740 150, 725 150" fill="none" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="720,155 725,145 730,155" fill="#1890ff"/>
+  
+  <!-- 连接箭头 -->
+  <path d="M325 145 L475 145" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="465,140 475,145 465,150" fill="#1890ff"/>
+  
+  <path d="M325 215 L475 215" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="465,210 475,215 465,220" fill="#1890ff"/>
+  
+  <path d="M325 275 L475 275" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="465,270 475,275 465,280" fill="#1890ff"/>
+  
+  <path d="M325 335 L475 335" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="465,330 475,335 465,340" fill="#1890ff"/>
+  
+  <path d="M325 395 L475 395" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="465,390 475,395 465,400" fill="#1890ff"/>
+  
+  <path d="M325 455 L475 455" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="465,450 475,455 465,460" fill="#1890ff"/>
+  
+  <path d="M325 515 L475 515" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="465,510 475,515 465,520" fill="#1890ff"/>
+</svg>
