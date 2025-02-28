@@ -13,14 +13,18 @@ const Slide8 = () => {
           {/* Cursor代码生成 */}
           <div className="video-box cursor">
             <div className="video-header">
-              <h4>Cursor: Chat/Composer</h4>
+              <h4>Cursor: Tab, tab, tab</h4>
               <span className="feature-pill">代码生成</span>
             </div>
             <div className="video-wrapper">
-              {/* 视频1将放置在这里 */}
-              <div className="video-placeholder">
-                <div className="placeholder-text">Cursor代码生成演示</div>
-              </div>
+              <video
+                className="video-element"
+                src="https://assets.basehub.com/191e7e6d/ad4eb38cfa78d745acec4f5faf8d73c1/current-best-for-one-mp4.mp4"
+                controls
+                autoPlay={false}
+                loop
+                muted
+              />
             </div>
             <div className="video-caption">
               通过Chat或Composer快速生成功能代码
@@ -30,14 +34,18 @@ const Slide8 = () => {
           {/* Trae代码生成 */}
           <div className="video-box trae">
             <div className="video-header">
-              <h4>Trae: Builder模式</h4>
+              <h4>Trae: Upload images to clarify requirements</h4>
               <span className="feature-pill">代码生成</span>
             </div>
             <div className="video-wrapper">
-              {/* 视频2将放置在这里 */}
-              <div className="video-placeholder">
-                <div className="placeholder-text">Trae代码生成演示</div>
-              </div>
+              <video
+                className="video-element"
+                src="https://lf-cdn.trae.ai/obj/trae-ai-us/feature-multimodality.mp4"
+                controls
+                autoPlay={false}
+                loop
+                muted
+              />
             </div>
             <div className="video-caption">
               使用Builder模式自动构建项目架构
@@ -50,14 +58,19 @@ const Slide8 = () => {
           {/* Cursor智能问答 */}
           <div className="video-box cursor">
             <div className="video-header">
-              <h4>Cursor: 上下文问答</h4>
+              <h4>Cursor: COMPOSER </h4>
               <span className="feature-pill">智能问答</span>
             </div>
+            {/* https://x.com/Sumanth_077/status/1894022968285503791 */}
             <div className="video-wrapper">
-              {/* 视频3将放置在这里 */}
-              <div className="video-placeholder">
-                <div className="placeholder-text">Cursor智能问答演示</div>
-              </div>
+              <video
+                className="video-element"
+                src="images/cursor_compose.mp4"
+                controls
+                autoPlay={false}
+                loop
+                muted
+              />
             </div>
             <div className="video-caption">
               基于项目上下文的代码问题解决方案
@@ -67,14 +80,18 @@ const Slide8 = () => {
           {/* Trae智能问答 */}
           <div className="video-box trae">
             <div className="video-header">
-              <h4>Trae: 智能对话</h4>
+              <h4>Trae: Chat to build a project faster</h4>
               <span className="feature-pill">智能问答</span>
             </div>
             <div className="video-wrapper">
-              {/* 视频4将放置在这里 */}
-              <div className="video-placeholder">
-                <div className="placeholder-text">Trae智能对话演示</div>
-              </div>
+              <video
+                className="video-element"
+                src="https://lf-cdn.trae.ai/obj/trae-ai-us/feature-builder.mp4"
+                controls
+                autoPlay={false}
+                loop
+                muted
+              />
             </div>
             <div className="video-caption">
               侧边栏与内联两种智能对话模式

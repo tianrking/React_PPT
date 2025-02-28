@@ -5,76 +5,92 @@ const Slide9 = () => {
   return (
     <div className="slide-content">
       <h2>II. 双剑合璧：Cursor 与 Trae 深度解析</h2>
-      <h3>功能实战演示对比 (二) - 代码补全与复杂任务</h3>
-      
+      <h3>功能实战演示对比 (二) - 自然语言编程与复杂任务</h3>
+
       <div className="responsive-video-grid">
-        {/* 第一行 - 代码自动补全 */}
+        {/* 第一行 - 自然语言编辑与代码补全 */}
         <div className="video-row">
-          {/* Cursor代码补全 */}
+          {/* Cursor自然语言编辑 */}
           <div className="video-box cursor">
             <div className="video-header">
-              <h4>Cursor: Tab补全</h4>
-              <span className="feature-pill">代码补全</span>
+              <h4>Cursor: Edit in natural language</h4>
+              <span className="feature-pill">自然语言编辑</span>
             </div>
             <div className="video-wrapper">
-              {/* 视频5将放置在这里 */}
-              <div className="video-placeholder">
-                <div className="placeholder-text">Cursor代码补全演示</div>
-              </div>
+              <video
+                className="video-element"
+                src="https://assets.basehub.com/191e7e6d/8ea9258a063943d01c1454f028b5294b/website-three-mp4.mp4"
+                controls
+                autoPlay={false}
+                loop
+                muted
+              />
             </div>
             <div className="video-caption">
-              多行智能补全与自动修复代码错误
+              通过简单指令更新整个类或函数逻辑
             </div>
           </div>
-          
+
           {/* Trae代码补全 */}
           <div className="video-box trae">
             <div className="video-header">
-              <h4>Trae: 自动补全</h4>
-              <span className="feature-pill">代码补全</span>
+              <h4>Trae: Get better results with full context</h4>
+              <span className="feature-pill">全文本分析</span>
             </div>
             <div className="video-wrapper">
-              {/* 视频6将放置在这里 */}
-              <div className="video-placeholder">
-                <div className="placeholder-text">Trae代码补全演示</div>
-              </div>
+              <video
+                className="video-element"
+                src="https://lf-cdn.trae.ai/obj/trae-ai-us/feature-context.mp4"
+                controls
+                autoPlay={false}
+                loop
+                muted
+              />
             </div>
             <div className="video-caption">
               基于上下文的代码自动续写与生成
             </div>
           </div>
         </div>
-        
-        {/* 第二行 - 复杂任务处理 */}
+
+        {/* 第二行 - Cursor一键构建与Trae复杂任务 */}
         <div className="video-row">
-          {/* Cursor复杂任务 */}
+          {/* Cursor一键构建 */}
           <div className="video-box cursor">
             <div className="video-header">
-              <h4>Cursor: Agent模式</h4>
-              <span className="feature-pill">复杂任务</span>
+              <h4>Cursor: Knows your codebase</h4>
+              <span className="feature-pill">一键构建</span>
             </div>
             <div className="video-wrapper">
-              {/* 视频7将放置在这里 */}
-              <div className="video-placeholder">
-                <div className="placeholder-text">Cursor复杂任务演示</div>
-              </div>
+              <video
+                className="video-element"
+                src="https://assets.basehub.com/191e7e6d/2c99e8a087f981290dc74d2b621a7192/current-best-for-two-mp4.mp4"
+                controls
+                autoPlay={false}
+                loop
+                muted
+              />
             </div>
             <div className="video-caption">
-              自动处理多文件修改与终端命令执行
+              交互式创建完整项目，从设计到实现
             </div>
           </div>
-          
+
           {/* Trae复杂任务 */}
           <div className="video-box trae">
             <div className="video-header">
-              <h4>Trae: 多文件处理</h4>
-              <span className="feature-pill">复杂任务</span>
+              <h4>Trae: Boost efficiency with smart completion</h4>
+              <span className="feature-pill">智能补全提效</span>
             </div>
             <div className="video-wrapper">
-              {/* 视频8将放置在这里 */}
-              <div className="video-placeholder">
-                <div className="placeholder-text">Trae复杂任务演示</div>
-              </div>
+              <video
+                className="video-element"
+                src="https://lf-cdn.trae.ai/obj/trae-ai-us/feature-completion.mp4"
+                controls
+                autoPlay={false}
+                loop
+                muted
+              />
             </div>
             <div className="video-caption">
               自动执行跨文件改动与项目级更新
@@ -82,11 +98,11 @@ const Slide9 = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="slide-note">
-        两款IDE都能通过AI辅助技术大幅提升代码补全效率和复杂任务处理能力
+        两款IDE都能理解自然语言指令，并将其转化为高质量代码，处理从单行修改到项目级构建的各种任务
       </div>
-      
+
       <div className="footer">Cursor、Trae 与开源框架的协同增效</div>
     </div>
   );
