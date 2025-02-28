@@ -1,3 +1,4 @@
+// src/components/PresentationControls.jsx
 import React from 'react';
 
 const PresentationControls = ({ 
@@ -6,10 +7,20 @@ const PresentationControls = ({
   goToPrevSlide, 
   goToNextSlide, 
   toggleFullscreen,
-  isFullscreen
+  isFullscreen,
+  toggleSidebar,
+  isSidebarOpen
 }) => {
   return (
     <div className="presentation-controls">
+      {/* 目录按钮 */}
+      <button 
+        className="menu-btn" 
+        onClick={toggleSidebar}
+      >
+        {isSidebarOpen ? '隐藏目录' : '显示目录'}
+      </button>
+      
       {/* 全屏按钮 */}
       <button 
         className="fullscreen-btn" 
