@@ -7,84 +7,84 @@ const Slide9 = () => {
       <h2>II. 双剑合璧：Cursor 与 Trae 深度解析</h2>
       <h3>功能实战演示对比 (二) - 代码补全与复杂任务</h3>
       
-      <div className="video-grid">
+      <div className="responsive-video-grid">
         {/* 第一行 - 代码自动补全 */}
-        <div className="grid-row">
+        <div className="video-row">
           {/* Cursor代码补全 */}
-          <div className="video-card cursor">
-            <div className="card-header">
+          <div className="video-box cursor">
+            <div className="video-header">
               <h4>Cursor: Tab补全</h4>
-              <div className="feature-tag">代码自动补全</div>
+              <span className="feature-pill">代码补全</span>
             </div>
-            <div className="video-container">
+            <div className="video-wrapper">
               {/* 视频5将放置在这里 */}
               <div className="video-placeholder">
-                <div className="video-overlay">Cursor代码补全演示</div>
+                <div className="placeholder-text">Cursor代码补全演示</div>
               </div>
             </div>
-            <div className="card-footer">
-              <p>多行智能补全与自动修复，能够预测开发者的下一步操作</p>
+            <div className="video-caption">
+              多行智能补全与自动修复代码错误
             </div>
           </div>
           
           {/* Trae代码补全 */}
-          <div className="video-card trae">
-            <div className="card-header">
+          <div className="video-box trae">
+            <div className="video-header">
               <h4>Trae: 自动补全</h4>
-              <div className="feature-tag">代码自动补全</div>
+              <span className="feature-pill">代码补全</span>
             </div>
-            <div className="video-container">
+            <div className="video-wrapper">
               {/* 视频6将放置在这里 */}
               <div className="video-placeholder">
-                <div className="video-overlay">Trae代码补全演示</div>
+                <div className="placeholder-text">Trae代码补全演示</div>
               </div>
             </div>
-            <div className="card-footer">
-              <p>基于上下文的代码自动续写与注释驱动的代码生成</p>
+            <div className="video-caption">
+              基于上下文的代码自动续写与生成
             </div>
           </div>
         </div>
         
         {/* 第二行 - 复杂任务处理 */}
-        <div className="grid-row">
+        <div className="video-row">
           {/* Cursor复杂任务 */}
-          <div className="video-card cursor">
-            <div className="card-header">
+          <div className="video-box cursor">
+            <div className="video-header">
               <h4>Cursor: Agent模式</h4>
-              <div className="feature-tag">复杂任务处理</div>
+              <span className="feature-pill">复杂任务</span>
             </div>
-            <div className="video-container">
+            <div className="video-wrapper">
               {/* 视频7将放置在这里 */}
               <div className="video-placeholder">
-                <div className="video-overlay">Cursor复杂任务演示</div>
+                <div className="placeholder-text">Cursor复杂任务演示</div>
               </div>
             </div>
-            <div className="card-footer">
-              <p>自动找上下文并执行多文件修改、重构与终端命令</p>
+            <div className="video-caption">
+              自动处理多文件修改与终端命令执行
             </div>
           </div>
           
           {/* Trae复杂任务 */}
-          <div className="video-card trae">
-            <div className="card-header">
+          <div className="video-box trae">
+            <div className="video-header">
               <h4>Trae: 多文件处理</h4>
-              <div className="feature-tag">复杂任务处理</div>
+              <span className="feature-pill">复杂任务</span>
             </div>
-            <div className="video-container">
+            <div className="video-wrapper">
               {/* 视频8将放置在这里 */}
               <div className="video-placeholder">
-                <div className="video-overlay">Trae复杂任务演示</div>
+                <div className="placeholder-text">Trae复杂任务演示</div>
               </div>
             </div>
-            <div className="card-footer">
-              <p>自动分析项目结构并执行跨文件改动与命令运行</p>
+            <div className="video-caption">
+              自动执行跨文件改动与项目级更新
             </div>
           </div>
         </div>
       </div>
       
-      <div className="notes">
-        <p>两款IDE都能通过AI自动化处理代码补全和复杂编程任务，各有特色和优势</p>
+      <div className="slide-note">
+        两款IDE都能通过AI辅助技术大幅提升代码补全效率和复杂任务处理能力
       </div>
       
       <div className="footer">Cursor、Trae 与开源框架的协同增效</div>
