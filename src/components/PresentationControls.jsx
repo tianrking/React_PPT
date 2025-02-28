@@ -13,13 +13,6 @@ const PresentationControls = ({
 }) => {
   return (
     <div className="presentation-controls">
-      {/* 目录按钮 */}
-      <button 
-        className="menu-btn" 
-        onClick={toggleSidebar}
-      >
-        {isSidebarOpen ? '隐藏目录' : '显示目录'}
-      </button>
       
       {/* 全屏按钮 */}
       <button 
