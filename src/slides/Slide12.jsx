@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 
 // 假 URL，后续替换为真实路径
-const setupVideo = 'https://fakeurl.com/cursor_ws2812_setup.mp4';
-const codeVideo = 'https://fakeurl.com/cursor_ws2812_code.mp4';
+const setupVideo = 'images/CURSOR_CODE-2.mp4';
+const codeVideo = 'images/CURSOR_LED.mp4';
 
 const Slide12 = () => {
   const [isPromptVisible, setIsPromptVisible] = useState(false); // 控制悬浮窗口显示
