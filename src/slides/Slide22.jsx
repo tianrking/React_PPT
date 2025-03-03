@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Slide22 = () => {
+  const [hoveredSection, setHoveredSection] = useState(null);
+  
   return (
     <div className="slide-content">
-      <h2>Seeed Studio与MCP技术结合应用</h2>
-      <h3>赋能产品与研发，创造智能硬件新体验</h3>
+      <h2 className="slide-title">Seeed Studio与MCP技术结合应用</h2>
+      <h3 className="slide-subtitle">赋能产品与研发，创造智能硬件新体验</h3>
       
       <div className="Slide22-sections">
-        <div className="Slide22-section internal">
+        <div 
+          className={`Slide22-section internal ${hoveredSection === 'internal' ? 'hovered' : ''}`}
+          onMouseEnter={() => setHoveredSection('internal')}
+          onMouseLeave={() => setHoveredSection(null)}
+        >
           <div className="section-header">
             <h4>对内：提升企业效率</h4>
             <span className="section-icon">🚀</span>
@@ -38,7 +44,11 @@ const Slide22 = () => {
           </div>
         </div>
         
-        <div className="Slide22-section external">
+        <div 
+          className={`Slide22-section external ${hoveredSection === 'external' ? 'hovered' : ''}`}
+          onMouseEnter={() => setHoveredSection('external')}
+          onMouseLeave={() => setHoveredSection(null)}
+        >
           <div className="section-header">
             <h4>对外：拓宽用户壁垒</h4>
             <span className="section-icon">🔄</span>
@@ -71,9 +81,13 @@ const Slide22 = () => {
       </div>
       
       <div className="Slide22-implementation">
-        <h4>Seeed Studio MCP应用方案</h4>
+        <h4 className="section-title">Seeed Studio MCP应用方案</h4>
         <div className="implementation-diagram">
-          <div className="diagram-item use-cases">
+          <div 
+            className={`diagram-item use-cases ${hoveredSection === 'use-cases' ? 'hovered' : ''}`}
+            onMouseEnter={() => setHoveredSection('use-cases')}
+            onMouseLeave={() => setHoveredSection(null)}
+          >
             <div className="diagram-header">核心应用场景</div>
             <div className="diagram-content">
               <ul>
@@ -84,8 +98,14 @@ const Slide22 = () => {
               </ul>
             </div>
           </div>
-          <div className="diagram-arrow">→</div>
-          <div className="diagram-item mcp-servers">
+          <div className="diagram-arrow">
+            <span className="arrow-icon">→</span>
+          </div>
+          <div 
+            className={`diagram-item mcp-servers ${hoveredSection === 'mcp-servers' ? 'hovered' : ''}`}
+            onMouseEnter={() => setHoveredSection('mcp-servers')}
+            onMouseLeave={() => setHoveredSection(null)}
+          >
             <div className="diagram-header">专用MCP服务器</div>
             <div className="diagram-content">
               <ul>
@@ -96,14 +116,20 @@ const Slide22 = () => {
               </ul>
             </div>
           </div>
-          <div className="diagram-arrow">→</div>
-          <div className="diagram-item benefits">
+          <div className="diagram-arrow">
+            <span className="arrow-icon">→</span>
+          </div>
+          <div 
+            className={`diagram-item benefits ${hoveredSection === 'benefits' ? 'hovered' : ''}`}
+            onMouseEnter={() => setHoveredSection('benefits')}
+            onMouseLeave={() => setHoveredSection(null)}
+          >
             <div className="diagram-header">业务价值</div>
             <div className="diagram-content">
               <ul>
-                <li>用户留存率提升35%</li>
-                <li>技术支持成本降低50%</li>
-                <li>新品上市周期缩短20%</li>
+                <li>用户留存率显著提升</li>
+                <li>技术支持成本大幅降低</li>
+                <li>新品上市周期明显缩短</li>
                 <li>生态系统扩展加速</li>
               </ul>
             </div>
@@ -112,7 +138,7 @@ const Slide22 = () => {
       </div>
       
       <div className="Slide22-example">
-        <h4>MCP服务与普通LLM的对比</h4>
+        <h4 className="section-title">MCP服务与普通LLM的对比</h4>
         <div className="example-content">
           <div className="comparison-table">
             <div className="comparison-header">
@@ -120,7 +146,11 @@ const Slide22 = () => {
               <div className="comparison-cell header">普通LLM回答</div>
               <div className="comparison-cell header">Seeed MCP服务</div>
             </div>
-            <div className="comparison-row">
+            <div 
+              className={`comparison-row ${hoveredSection === 'comparison-1' ? 'hovered' : ''}`}
+              onMouseEnter={() => setHoveredSection('comparison-1')}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
               <div className="comparison-cell">
                 "哪些传感器适合水质监测？"
               </div>
@@ -133,7 +163,11 @@ const Slide22 = () => {
                 含详细规格和实际库存情况
               </div>
             </div>
-            <div className="comparison-row">
+            <div 
+              className={`comparison-row ${hoveredSection === 'comparison-2' ? 'hovered' : ''}`}
+              onMouseEnter={() => setHoveredSection('comparison-2')}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
               <div className="comparison-cell">
                 "我的XIAO连接I2C传感器出错"
               </div>
@@ -146,7 +180,11 @@ const Slide22 = () => {
                 提供针对性解决方案和固件建议
               </div>
             </div>
-            <div className="comparison-row">
+            <div 
+              className={`comparison-row ${hoveredSection === 'comparison-3' ? 'hovered' : ''}`}
+              onMouseEnter={() => setHoveredSection('comparison-3')}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
               <div className="comparison-cell">
                 "想做智能农业监测系统"
               </div>
