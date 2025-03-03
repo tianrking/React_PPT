@@ -20,6 +20,11 @@ import Slide17 from './Slide17';
 import Slide18 from './Slide18';
 import Slide19 from './Slide19';
 
+import Slide20 from './Slide20';
+
+import Slide21 from './Slide21';
+
+import Slide22 from './Slide22';
 // 导出所有幻灯片的数组
 const allSlides = [
   Slide1,
@@ -37,11 +42,19 @@ const allSlides = [
   Slide13,
   Slide14,
 
-  Slide15,
-  Slide16,
-  Slide17,
-  Slide18,
-  Slide19,
+  ///MCP
+  Slide21, //15
+  Slide20, //16 
+  Slide22, //17
+  //MCP END
+
+  Slide15, //18
+  Slide16,  //19
+  Slide17,  //20
+  Slide18,  //21
+  Slide19,  //22
+
+
 ];
 
 export default allSlides;
