@@ -48,11 +48,11 @@ const allSlides = [
   Slide22, //17
   //MCP END
 
-  Slide15, //18
-  Slide16,  //19
-  Slide17,  //20
-  Slide18,  //21
-  Slide19,  //22
+  // Slide15, //18
+  Slide16,  //19 //18
+  // Slide17,  //20 
+  Slide18,  //21  /19
+  Slide19,  //22  /20
 
 
 ];
