@@ -51,13 +51,7 @@ const Slide21 = () => {
             <div className="step-content">
               <p>接收工具调用请求：</p>
               <div className="data-json">
-                {`{
-  "name": "get_forecast",
-  "args": {
-    "latitude": 39.9042,
-    "longitude": 116.4074
-  }
-}`}
+                {`{   "name": "get_forecast",   "args": {     "latitude": 39.9042,     "longitude": 116.4074   } }`}
               </div>
               <p>→ 调用气象API获取数据</p>
               <p>→ 处理并格式化结果</p>
@@ -69,17 +63,7 @@ const Slide21 = () => {
             <div className="step-content">
               <p>服务器返回预报数据：</p>
               <div className="data-preview">
-                {`明天:
-温度: 22°C
-风向: 东北风 3级
-天气: 多云转晴
-降水概率: 10%
----
-后天:
-温度: 24°C
-风向: 东风 2级
-天气: 晴
-降水概率: 5%`}
+                {`明天: 温度: 22°C 风向: 东北风 3级 天气: 多云转晴 降水概率: 10% --- 后天: 温度: 24°C 风向: 东风 2级 天气: 晴 降水概率: 5%`}
               </div>
               <p>→ Claude处理结果</p>
               <p>→ 生成自然语言回答</p>
