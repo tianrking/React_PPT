@@ -11,7 +11,7 @@ const Slide13 = () => {
         <div className="Slide13-content-box">
           <h4>技术背景</h4>
           <p>
-            browser-use 是一个浏览器自动化框架，Trae 的 AI 能力让其实现智能操作。
+            browser-use 是一个浏览器自动化框架 利用 CDP(Chrome Devtools Protocol)协议 实现浏览器的操控，Trae 的 AI 能力让其实现智能操作。
           </p>
         </div>
         <div className="Slide13-content-box">
