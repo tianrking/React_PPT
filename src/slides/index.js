@@ -25,6 +25,9 @@ import Slide20 from './Slide20';
 import Slide21 from './Slide21';
 
 import Slide22 from './Slide22';
+
+import Slide23 from './Slide23';
+import Slide24 from './Slide24';
 // 导出所有幻灯片的数组
 // const allSlides = [
 //   Slide1,
@@ -88,6 +91,9 @@ const allSlides = [
   Slide16, // Prompt工程：提升AI开发助手效能的关键
   Slide18, // 开发者(生产者)提效策略
   Slide19, // 降低开发壁垒与拓展客户群体
+
+  Slide23,
+  Slide24,
 ];
 
 export default allSlides;
